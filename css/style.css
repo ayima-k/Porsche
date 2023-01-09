@@ -1,0 +1,492 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  bottom: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 7%;
+  padding-bottom: 20px;
+}
+.logo{
+  width: 130px;
+  height: 72px;
+  margin-top: -45px;
+  z-index: 999;
+}
+.logo img{
+  width: 100%;
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  box-shadow: 0 0 3px 0 gray;
+  background-color: white;
+  cursor: pointer;
+  transition: .3s;
+}
+.images{
+  display: flex;
+  gap: 15px;
+  transition: .3s;
+}
+.images div p{
+  text-align: center;
+  margin-top: -15px;
+  font-size: 16px;
+  transition: .3s;
+}
+.images div:hover p{
+  color: crimson;
+}
+.right-nav-block, .right-nav-block div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.right-nav-block{
+  gap: 20px;
+}
+.bag-icon{
+  width: 33px;
+  height: 32px;
+}
+.map-icon{
+  width: 25px;
+  height: 25px;
+}
+.user-icon{
+  width: 20px;
+  height: 50px;
+  object-fit: cover;
+}
+.more-icon{
+  width: 25px;
+  transition: .3s;
+}
+.right-nav-block div p:hover{
+  color: crimson;
+}
+.border{
+  height: 1px;
+  background-color: rgb(227, 228, 229);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide p{
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  font-size: 45px;
+  bottom: 50px;
+  left: 70px;
+}
+.swiper-slide span{
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  bottom: 20px;
+  left: 70px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper:hover .swiper-button-prev{
+  opacity: 1;
+}
+.swiper:hover .swiper-button-next{
+  opacity: 1;
+}
+.swiper-button-next, .swiper-button-prev{
+  color: black !important;
+  background-color: white;
+  padding: 25px;
+  height: 1px !important;
+  transition: .3s;
+  opacity: 0;
+}
+.swiper-button-next:hover , .swiper-button-prev:hover{
+  background-color: crimson;
+  color: white !important;
+}
+.swiper-pagination-bullet{
+  background-color: crimson !important;
+}
+.swiper-scrollbar-bullets{
+  background-color: white !important;
+}
+.menu-burger{
+  display: flex;
+  align-items: center;
+  display: none;
+}
+.menu-burger p{
+  font-size: 20px;
+}
+.menu-burger img{
+  width: 35px;
+  height: 35px;
+}
+
+
+.max-width{
+  margin: 3% 7%;
+}
+.title{
+  font-size: 37px;
+}
+
+.inline-block{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card{
+  width: 440px;
+  height: 50%;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+.card h1{
+  color: #fff;
+  font-size: 35px;
+}
+.card button{
+  padding: 17px 24px;
+  margin-top: 55%;
+  font-size: 17px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: .3s;
+}
+.first-btn{
+  border: none;
+  background-color: white;
+}
+.first-btn:hover{
+  background-color: crimson;
+  color: #fff;
+}
+.second-btn{
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.second-btn:hover{
+  border-color: crimson;
+  color: crimson;
+}
+.one{
+  background: url('https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-718/small/ccc805c0-6693-11e9-80c4-005056bbdc38;sQ;twebp;c1693;gc/porsche-small.webp') no-repeat center;
+  height: 60vh;
+  object-fit: cover;
+}
+.two{
+  background: url('https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-911/small/3cf76e8c-6694-11e9-80c4-005056bbdc38;sQ;twebp;c1693;gc/porsche-small.webp') no-repeat center;
+  height: 60vh;
+  object-fit: cover;
+}
+.three{
+  background: url('https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-taycan/small/094d1c1c-bab0-11e9-80c4-005056bbdc38;sQ;twebp;c1693;gc/porsche-small.webp') no-repeat center;
+  height: 60vh;
+  object-fit: cover;
+}
+.four{
+  background: url('https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-panamera/small/31077aa2-d337-11ea-80cc-005056bbdc38;sQ;twebp;c1693;gc/porsche-small.webp') no-repeat center;
+  height: 60vh;
+  object-fit: cover;
+}
+.five{
+  background: url('https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-macan/small/47db3c6d-e3d7-11eb-80d9-005056bbdc38;sN;twebp;c892;gc/porsche-small.webp') no-repeat center;
+  height: 60vh;
+  object-fit: cover;
+}
+.six{
+  background: url('https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-cayenne/small/46131fe5-6694-11e9-80c4-005056bbdc38;sQ;twebp;c1693;gc/porsche-small.webp') no-repeat center;
+  height: 60vh;
+  object-fit: cover;
+}
+
+
+
+
+.block-back-img{
+  background: url('https://files.porsche.com/filestore/image/multimedia/none/module-background-leipzig/normal/dc3517d1-1668-11ea-80c6-005056bbdc38;sN/porsche-normal.jpg') center / cover;
+  height: 50vh;
+  position: relative;
+  margin-top: 2rem;
+}
+.block-back-img:after {
+  content: 'The required content could not be loaded. If you use an AdBlocker, please check its settings.';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  background: rgba(0,0,0,.6);
+  padding-top: 13%;
+  padding-left: 70px;
+  z-index: 2;
+}
+.load-more{
+  float: right;
+  background: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px 25px;
+  margin-top: 2%;
+  background-color: rgb(72, 69, 69);
+  color: #fff;
+}
+
+
+
+
+.discover{
+  margin-top: 7rem;
+}
+.block-discover{
+  display: flex;
+}
+.card-discover{
+  margin-top: 1rem;
+}
+.card-discover a{
+  transition: .3s;
+}
+.card-discover:hover a{
+  color: crimson;
+  border-top: 3px solid crimson;
+  padding-top: 5px;
+}
+.card-discover img{
+  width: 325px;
+}
+
+
+
+
+.border-footer{
+  border: 1px solid lightgray;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+}
+.footer-list{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-list li a{
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+  color: #000;
+  transition: .3s;
+}    
+.footer-list li a:hover{
+  color: crimson;
+}
+.li-four img{
+  width: 20px;
+}
+.li-four button{
+  background-color: #191f22;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 15px 15px;
+  width: 310px;
+}
+.li-four button img{
+  margin-right: 20px;
+}
+.li-four p{
+  font-size: 23px;
+  margin-top: 3rem;
+  color: #777
+}
+.li-four div{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: -20px;
+}
+.li-four div a{
+  background-color: #191f22;
+  padding: 15px;
+  margin-left: 10px;
+}
+.li-four div a img{
+  width: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 2000px) {
+  .card{
+    width: 499px;
+  }
+}
+@media (max-width:1440px){
+  .card{
+    width: 480px;
+  }
+  .block-back-img::after{
+    padding-top: 10%;
+  }
+  .card-discover img{
+    width: 300px;
+  }
+}
+@media (max-width: 1024px) {
+  .right-nav-block, .more-icon, .images{
+    display: none;
+  }
+  .menu-burger{
+    display: block;
+  }
+  .card{
+    width: 512px;
+    height: 400px;
+  }
+  .card button{
+    margin-top: 54%;
+  }
+  .card-discover img{
+    width: 220px;
+  }
+}
+@media (max-width: 768px){
+  .card{
+    width: 384px;
+  }
+  .card button{
+    margin-top: 70%;
+  }
+  .block-back-img::after{
+    padding-top: 15%;
+  }
+  .block-discover{
+    flex-wrap: wrap;
+  }
+  .card-discover{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 425px) {
+  .swiper-slide img{
+    height: 120vh;
+  }
+  .swiper-slide p{
+    font-size: 25px;
+  }
+  .swiper-slide span{
+    font-size: 20px;
+  }
+  .card{
+    width: 212px;
+    height: 250px;
+  }
+  .card button{
+    display: none;
+  }
+  .card h1{
+    font-size: 24px;
+  }
+  .block-back-img::after{
+    padding-left: 4%;
+    padding-top: 25%;
+  }
+  .card-discover{
+    width: 180px;
+  }
+  .card-discover img{
+    width: 180px;
+  }
+}
+@media (max-width: 375px) {
+  .card{
+    width: 187px;
+    height: 200px;
+  }
+  .card-discover{
+    width: 160px;
+  }
+  .card-discover img{
+    width: 160px;
+  }
+}
+@media (max-width: 320px) {
+  .swiper-slide img{
+    height: 70vh;
+  }
+  .swiper-slide p{
+    font-size: 25px;
+    left: 10px;
+  }
+  .swiper-slide span{
+    font-size: 20px;
+    left: 10px;
+  }
+  .card{
+    width: 160px;
+    height: 180px;
+  }
+  .card-discover img{
+    width: 130px;
+  }
+  .card-discover{
+    width: 130px;
+  }
+}
